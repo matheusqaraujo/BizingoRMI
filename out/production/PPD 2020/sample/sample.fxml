@@ -6,7 +6,7 @@
 
 <GridPane id="bizingoBoard" alignment="center" prefHeight="599.0" prefWidth="1200.0" style="-fx-background-color: #cbecd7;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Polygon fill="#3ea868" layoutX="20.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8">
+      <Polygon fill="#3ea868" layoutX="20.0" onMouseClicked="#TESTE_ALGUMA_COISA" userData="0-8" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8">
         <points>
           <Double fx:value="-25.0" />
           <Double fx:value="20.0" />
@@ -16,7 +16,7 @@
           <Double fx:value="-30.0" />
         </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="315.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="315.0" rotate="180.0" onMouseClicked="#TESTE_ALGUMA_COISA" userData="0-9" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -26,7 +26,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="315.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="315.0" onMouseClicked="#TESTE_ALGUMA_COISA" userData="0-10" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
