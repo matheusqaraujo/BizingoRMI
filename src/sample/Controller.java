@@ -13,9 +13,12 @@ public class Controller {
 
         Node n = (Node)event.getSource();
 
-        String[] data = ((String)n.getUserData()).split("-");
-        System.out.println("LINHA: " + data[0]);
-        System.out.println("COLUNA: " + data[1]);
+        //String[] data = ((String)n.getUserData()).split("-");
+        //System.out.println("LINHA: " + data[0]);
+        //System.out.println("COLUNA: " + data[1]);
+
+        System.out.println("Linha: "+ GridPane.getRowIndex(n));
+        System.out.println("Coluna: "+ GridPane.getColumnIndex(n));
 
     }
 }

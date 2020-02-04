@@ -6,7 +6,7 @@
 
 <GridPane id="bizingoBoard" alignment="center" prefHeight="599.0" prefWidth="1200.0" style="-fx-background-color: #cbecd7;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Polygon fill="#3ea868" layoutX="20.0" onMouseClicked="#TESTE_ALGUMA_COISA" userData="0-8" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8">
+      <Polygon fill="#3ea868" layoutX="20.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" userData="0-8" GridPane.columnIndex="8" GridPane.rowIndex="0">
         <points>
           <Double fx:value="-25.0" />
           <Double fx:value="20.0" />
@@ -16,7 +16,7 @@
           <Double fx:value="-30.0" />
         </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="315.0" rotate="180.0" onMouseClicked="#TESTE_ALGUMA_COISA" userData="0-9" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="315.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" userData="0-9" GridPane.columnIndex="9" GridPane.rowIndex="0">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -26,7 +26,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="315.0" onMouseClicked="#TESTE_ALGUMA_COISA" userData="0-10" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="315.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" userData="0-10" GridPane.columnIndex="10" GridPane.rowIndex="0">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -36,7 +36,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="340.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="1">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="340.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" userData="1-8" GridPane.columnIndex="8" GridPane.rowIndex="1">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -46,7 +46,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="315.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="1">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="315.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" userData="1-7" GridPane.columnIndex="7" GridPane.rowIndex="1">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -56,7 +56,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="340.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9" GridPane.rowIndex="1">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="340.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9" GridPane.rowIndex="1">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -66,7 +66,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="340.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="2">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="340.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="2">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -76,7 +76,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="340.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10" GridPane.rowIndex="1">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="340.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10" GridPane.rowIndex="1">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -86,7 +86,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="340.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11" GridPane.rowIndex="1">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="340.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11" GridPane.rowIndex="1">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -96,7 +96,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="365.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="2">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="365.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="2">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -106,7 +106,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="365.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="2">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="365.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="2">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -116,7 +116,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="365.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="3">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="365.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="3">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -126,7 +126,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="340.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="3">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="340.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="3">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -136,7 +136,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="240.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="4">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="240.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="4">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -146,7 +146,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="290.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9" GridPane.rowIndex="2">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="290.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9" GridPane.rowIndex="2">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -156,7 +156,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="290.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="3">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="290.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="3">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -166,7 +166,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="340.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10" GridPane.rowIndex="2">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="340.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10" GridPane.rowIndex="2">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -176,7 +176,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="340.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.rowIndex="2">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="340.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.rowIndex="2">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -186,7 +186,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="340.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11" GridPane.rowIndex="2">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="340.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11" GridPane.rowIndex="2">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -196,7 +196,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="3">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="3">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -206,7 +206,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9" GridPane.rowIndex="3">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9" GridPane.rowIndex="3">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -216,7 +216,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10" GridPane.rowIndex="3">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10" GridPane.rowIndex="3">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -226,7 +226,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11" GridPane.rowIndex="3">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11" GridPane.rowIndex="3">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -236,7 +236,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.rowIndex="3">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.rowIndex="3">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -246,7 +246,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="13" GridPane.rowIndex="3">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="13" GridPane.rowIndex="3">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -256,7 +256,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="4">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="4">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -266,7 +266,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="415.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="4">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="415.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="4">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -276,7 +276,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="415.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="4">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="415.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="4">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -286,7 +286,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="415.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="4">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="415.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="4">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -296,7 +296,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="415.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9" GridPane.rowIndex="4">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="415.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9" GridPane.rowIndex="4">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -306,7 +306,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="415.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10" GridPane.rowIndex="4">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="415.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10" GridPane.rowIndex="4">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -316,7 +316,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="415.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11" GridPane.rowIndex="4">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="415.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11" GridPane.rowIndex="4">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -326,7 +326,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="415.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.rowIndex="4">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="415.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.rowIndex="4">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -336,7 +336,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="415.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="13" GridPane.rowIndex="4">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="415.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="13" GridPane.rowIndex="4">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -346,7 +346,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="415.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="14" GridPane.rowIndex="4">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="415.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="14" GridPane.rowIndex="4">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -356,7 +356,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="440.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="5">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="440.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="5">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -366,7 +366,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="190.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="5">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="190.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="5">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -376,7 +376,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="190.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="5">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="190.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="5">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -386,7 +386,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="190.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="5">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="190.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="5">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -396,7 +396,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="5">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="5">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -406,7 +406,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="5">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="5">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -416,7 +416,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="190.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9" GridPane.rowIndex="5">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="190.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9" GridPane.rowIndex="5">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -426,7 +426,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="440.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10" GridPane.rowIndex="5">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="440.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10" GridPane.rowIndex="5">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -436,7 +436,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11" GridPane.rowIndex="5">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11" GridPane.rowIndex="5">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -446,7 +446,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="340.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.rowIndex="5">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="340.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.rowIndex="5">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -456,7 +456,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="190.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="13" GridPane.rowIndex="5">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="190.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="13" GridPane.rowIndex="5">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -466,7 +466,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="415.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="6">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="415.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="6">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -476,7 +476,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="415.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="7">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="415.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="7">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -486,7 +486,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="6">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="6">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -496,7 +496,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="440.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="7">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="440.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="7">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -506,7 +506,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="440.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="7">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="440.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="7">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -516,7 +516,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="6">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="6">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -526,7 +526,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="7">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="7">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -536,7 +536,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="6">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="6">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -546,7 +546,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="7">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="7">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -556,7 +556,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="6">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="6">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -566,7 +566,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="7">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="7">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -576,7 +576,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="440.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="6">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="440.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="6">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -586,7 +586,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="6">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="6">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -596,7 +596,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="7">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="7">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -606,7 +606,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="7">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="7">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -616,7 +616,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="440.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9" GridPane.rowIndex="6">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="440.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9" GridPane.rowIndex="6">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -626,7 +626,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9" GridPane.rowIndex="7">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9" GridPane.rowIndex="7">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -636,7 +636,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="440.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10" GridPane.rowIndex="6">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="440.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10" GridPane.rowIndex="6">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -646,7 +646,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10" GridPane.rowIndex="7">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10" GridPane.rowIndex="7">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -656,7 +656,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="440.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11" GridPane.rowIndex="6">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="440.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11" GridPane.rowIndex="6">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -666,7 +666,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="440.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11" GridPane.rowIndex="7">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="440.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11" GridPane.rowIndex="7">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -676,7 +676,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="440.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.rowIndex="6">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="440.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.rowIndex="6">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -686,7 +686,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="440.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.rowIndex="7">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="440.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.rowIndex="7">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -696,7 +696,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="440.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="13" GridPane.rowIndex="6">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="440.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="13" GridPane.rowIndex="6">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -706,7 +706,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="240.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="13" GridPane.rowIndex="7">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="240.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="13" GridPane.rowIndex="7">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -716,7 +716,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="440.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="14" GridPane.rowIndex="6">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="440.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="14" GridPane.rowIndex="6">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -726,7 +726,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="340.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="15" GridPane.rowIndex="5">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="340.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="15" GridPane.rowIndex="5">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -736,7 +736,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="340.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="16" GridPane.rowIndex="6">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="340.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="16" GridPane.rowIndex="6">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -746,7 +746,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="340.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="17" GridPane.rowIndex="7">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="340.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="17" GridPane.rowIndex="7">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -756,7 +756,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="14" GridPane.rowIndex="5">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="14" GridPane.rowIndex="5">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -766,7 +766,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="15" GridPane.rowIndex="6">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="390.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="15" GridPane.rowIndex="6">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -776,7 +776,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="440.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="14" GridPane.rowIndex="7">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="440.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="14" GridPane.rowIndex="7">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -786,7 +786,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="440.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="15" GridPane.rowIndex="7">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="440.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="15" GridPane.rowIndex="7">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -796,7 +796,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="440.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="16" GridPane.rowIndex="7">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="440.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="16" GridPane.rowIndex="7">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -806,7 +806,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="490.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="9">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="490.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -816,7 +816,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="465.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="9">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="465.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -826,7 +826,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="465.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="9">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="465.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -836,7 +836,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="465.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="9">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="465.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -846,7 +846,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="465.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="9">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="465.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -856,7 +856,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="465.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="9">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="465.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -866,7 +866,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="465.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="9">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="465.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -876,7 +876,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="465.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9" GridPane.rowIndex="9">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="465.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9" GridPane.rowIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -886,7 +886,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="465.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10" GridPane.rowIndex="9">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="465.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10" GridPane.rowIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -896,7 +896,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="465.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11" GridPane.rowIndex="9">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="465.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11" GridPane.rowIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -906,7 +906,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="465.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.rowIndex="9">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="465.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.rowIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -916,7 +916,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="465.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="13" GridPane.rowIndex="9">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="465.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="13" GridPane.rowIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -926,7 +926,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="465.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="14" GridPane.rowIndex="9">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="465.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="14" GridPane.rowIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -936,7 +936,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="465.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="15" GridPane.rowIndex="9">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="465.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="15" GridPane.rowIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -946,7 +946,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="465.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="16" GridPane.rowIndex="9">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="465.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="16" GridPane.rowIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -956,7 +956,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="115.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="115.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11" GridPane.rowIndex="0">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -966,7 +966,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="115.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="115.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.rowIndex="0">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -976,7 +976,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="115.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.rowIndex="1">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="115.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.rowIndex="1">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -986,7 +986,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="165.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="13" GridPane.rowIndex="1">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="165.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="13" GridPane.rowIndex="1">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -996,7 +996,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="165.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="13" GridPane.rowIndex="2">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="165.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="13" GridPane.rowIndex="2">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1006,7 +1006,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="215.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="14" GridPane.rowIndex="2">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="215.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="14" GridPane.rowIndex="2">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1016,7 +1016,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="215.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="14" GridPane.rowIndex="3">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="215.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="14" GridPane.rowIndex="3">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1026,7 +1026,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="265.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="15" GridPane.rowIndex="3">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="265.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="15" GridPane.rowIndex="3">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1036,7 +1036,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="265.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="15" GridPane.rowIndex="4">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="265.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="15" GridPane.rowIndex="4">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1046,7 +1046,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="315.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="16" GridPane.rowIndex="4">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="315.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="16" GridPane.rowIndex="4">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1056,7 +1056,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="315.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="16" GridPane.rowIndex="5">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="315.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="16" GridPane.rowIndex="5">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1066,7 +1066,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="365.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="17" GridPane.rowIndex="5">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="365.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="17" GridPane.rowIndex="5">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1076,7 +1076,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="365.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="17" GridPane.rowIndex="6">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="365.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="17" GridPane.rowIndex="6">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1086,7 +1086,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="415.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="18" GridPane.rowIndex="6">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="415.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="18" GridPane.rowIndex="6">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1096,7 +1096,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="465.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="18" GridPane.rowIndex="7">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="465.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="18" GridPane.rowIndex="7">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1106,7 +1106,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="465.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="19" GridPane.rowIndex="7">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="465.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="19" GridPane.rowIndex="7">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1116,7 +1116,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="515.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="17" GridPane.rowIndex="9">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="515.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="17" GridPane.rowIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1126,7 +1126,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="515.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="18" GridPane.rowIndex="9">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="515.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="18" GridPane.rowIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1136,7 +1136,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="515.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="9">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="515.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1146,7 +1146,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="20.0" layoutY="515.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="19" GridPane.rowIndex="9">
+      <Polygon fill="WHITE" layoutX="20.0" layoutY="515.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="19" GridPane.rowIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1156,7 +1156,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="20.0" layoutY="465.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="20" GridPane.rowIndex="9">
+      <Polygon fill="#3ea868" layoutX="20.0" layoutY="465.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="20" GridPane.rowIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1166,7 +1166,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="1110.0" layoutY="515.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="9">
+      <Polygon fill="#3ea868" layoutX="1110.0" layoutY="515.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="0" GridPane.rowIndex="9">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1176,7 +1176,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="110.0" layoutY="515.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="10">
+      <Polygon fill="WHITE" layoutX="110.0" layoutY="515.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="0" GridPane.rowIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1186,7 +1186,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="110.0" layoutY="540.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="10">
+      <Polygon fill="#3ea868" layoutX="110.0" layoutY="540.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1196,7 +1196,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="160.0" layoutY="540.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="10">
+      <Polygon fill="WHITE" layoutX="160.0" layoutY="540.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1206,7 +1206,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="210.0" layoutY="540.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="10">
+      <Polygon fill="#3ea868" layoutX="210.0" layoutY="540.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1216,7 +1216,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="260.0" layoutY="540.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="10">
+      <Polygon fill="WHITE" layoutX="260.0" layoutY="540.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1226,7 +1226,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="310.0" layoutY="540.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="10">
+      <Polygon fill="#3ea868" layoutX="310.0" layoutY="540.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1236,7 +1236,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="360.0" layoutY="540.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="10">
+      <Polygon fill="WHITE" layoutX="360.0" layoutY="540.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1246,7 +1246,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="410.0" layoutY="540.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="10">
+      <Polygon fill="#3ea868" layoutX="410.0" layoutY="540.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1256,7 +1256,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="460.0" layoutY="540.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="10">
+      <Polygon fill="WHITE" layoutX="460.0" layoutY="540.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1266,7 +1266,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="510.0" layoutY="540.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9" GridPane.rowIndex="10">
+      <Polygon fill="#3ea868" layoutX="510.0" layoutY="540.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9" GridPane.rowIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1276,7 +1276,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="560.0" layoutY="540.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10" GridPane.rowIndex="10">
+      <Polygon fill="WHITE" layoutX="560.0" layoutY="540.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10" GridPane.rowIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1286,7 +1286,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="610.0" layoutY="540.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11" GridPane.rowIndex="10">
+      <Polygon fill="#3ea868" layoutX="610.0" layoutY="540.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11" GridPane.rowIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1296,7 +1296,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="660.0" layoutY="540.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.rowIndex="10">
+      <Polygon fill="WHITE" layoutX="660.0" layoutY="540.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.rowIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1306,7 +1306,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="710.0" layoutY="540.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="13" GridPane.rowIndex="10">
+      <Polygon fill="#3ea868" layoutX="710.0" layoutY="540.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="13" GridPane.rowIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1316,7 +1316,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="760.0" layoutY="540.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="14" GridPane.rowIndex="10">
+      <Polygon fill="WHITE" layoutX="760.0" layoutY="540.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="14" GridPane.rowIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1326,7 +1326,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="810.0" layoutY="540.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="15" GridPane.rowIndex="10">
+      <Polygon fill="#3ea868" layoutX="810.0" layoutY="540.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="15" GridPane.rowIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1336,7 +1336,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="860.0" layoutY="540.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="16" GridPane.rowIndex="10">
+      <Polygon fill="WHITE" layoutX="860.0" layoutY="540.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="16" GridPane.rowIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1346,7 +1346,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="910.0" layoutY="540.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="17" GridPane.rowIndex="10">
+      <Polygon fill="#3ea868" layoutX="910.0" layoutY="540.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="17" GridPane.rowIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1356,7 +1356,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="960.0" layoutY="540.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="18" GridPane.rowIndex="10">
+      <Polygon fill="WHITE" layoutX="960.0" layoutY="540.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="18" GridPane.rowIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1366,7 +1366,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="1010.0" layoutY="540.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="19" GridPane.rowIndex="10">
+      <Polygon fill="#3ea868" layoutX="1010.0" layoutY="540.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="19" GridPane.rowIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1376,7 +1376,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="1060.0" layoutY="540.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="20" GridPane.rowIndex="10">
+      <Polygon fill="WHITE" layoutX="1060.0" layoutY="540.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="20" GridPane.rowIndex="10">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1386,7 +1386,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="110.0" layoutY="540.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="11">
+      <Polygon fill="WHITE" layoutX="110.0" layoutY="540.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="11">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1396,7 +1396,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="160.0" layoutY="565.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="11">
+      <Polygon fill="#3ea868" layoutX="160.0" layoutY="565.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="11">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1406,7 +1406,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="210.0" layoutY="565.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="11">
+      <Polygon fill="WHITE" layoutX="210.0" layoutY="565.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="11">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1416,7 +1416,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="260.0" layoutY="565.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="11">
+      <Polygon fill="#3ea868" layoutX="260.0" layoutY="565.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="4" GridPane.rowIndex="11">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1426,7 +1426,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="310.0" layoutY="565.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="11">
+      <Polygon fill="WHITE" layoutX="310.0" layoutY="565.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="5" GridPane.rowIndex="11">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1436,7 +1436,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="360.0" layoutY="565.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="11">
+      <Polygon fill="#3ea868" layoutX="360.0" layoutY="565.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="6" GridPane.rowIndex="11">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1446,7 +1446,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="410.0" layoutY="565.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="11">
+      <Polygon fill="WHITE" layoutX="410.0" layoutY="565.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.rowIndex="11">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1456,7 +1456,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="460.0" layoutY="565.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="11">
+      <Polygon fill="#3ea868" layoutX="460.0" layoutY="565.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.rowIndex="11">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1466,7 +1466,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="510.0" layoutY="565.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9" GridPane.rowIndex="11">
+      <Polygon fill="WHITE" layoutX="510.0" layoutY="565.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="9" GridPane.rowIndex="11">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1476,7 +1476,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="560.0" layoutY="565.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10" GridPane.rowIndex="11">
+      <Polygon fill="#3ea868" layoutX="560.0" layoutY="565.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="10" GridPane.rowIndex="11">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1486,7 +1486,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="610.0" layoutY="565.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11" GridPane.rowIndex="11">
+      <Polygon fill="WHITE" layoutX="610.0" layoutY="565.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="11" GridPane.rowIndex="11">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1496,7 +1496,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="660.0" layoutY="565.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.rowIndex="11">
+      <Polygon fill="#3ea868" layoutX="660.0" layoutY="565.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="12" GridPane.rowIndex="11">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1506,7 +1506,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="710.0" layoutY="565.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="13" GridPane.rowIndex="11">
+      <Polygon fill="WHITE" layoutX="710.0" layoutY="565.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="13" GridPane.rowIndex="11">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1516,7 +1516,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="760.0" layoutY="565.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="14" GridPane.rowIndex="11">
+      <Polygon fill="#3ea868" layoutX="760.0" layoutY="565.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="14" GridPane.rowIndex="11">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1526,7 +1526,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="810.0" layoutY="565.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="15" GridPane.rowIndex="11">
+      <Polygon fill="WHITE" layoutX="810.0" layoutY="565.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="15" GridPane.rowIndex="11">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1536,7 +1536,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="860.0" layoutY="565.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="16" GridPane.rowIndex="11">
+      <Polygon fill="#3ea868" layoutX="860.0" layoutY="565.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="16" GridPane.rowIndex="11">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1546,7 +1546,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="910.0" layoutY="565.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="17" GridPane.rowIndex="11">
+      <Polygon fill="WHITE" layoutX="910.0" layoutY="565.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="17" GridPane.rowIndex="11">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1556,7 +1556,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="#3ea868" layoutX="960.0" layoutY="565.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="18" GridPane.rowIndex="11">
+      <Polygon fill="#3ea868" layoutX="960.0" layoutY="565.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="18" GridPane.rowIndex="11">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
@@ -1566,7 +1566,7 @@
             <Double fx:value="-30.0" />
          </points>
       </Polygon>
-      <Polygon fill="WHITE" layoutX="1010.0" layoutY="565.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="19" GridPane.rowIndex="11">
+      <Polygon fill="WHITE" layoutX="1010.0" layoutY="565.0" onMouseClicked="#TESTE_ALGUMA_COISA" rotate="180.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="19" GridPane.rowIndex="11">
          <points>
             <Double fx:value="-25.0" />
             <Double fx:value="20.0" />
