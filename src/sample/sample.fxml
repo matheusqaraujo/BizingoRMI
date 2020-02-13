@@ -7,7 +7,7 @@
 
 <SplitPane dividerPositions="0.5" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <items>
-      <GridPane id="bizingoBoard" alignment="center" maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #cbecd7;">
+      <GridPane id="bizingoBoard" fx:id="bizingoBoard" alignment="center" maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #cbecd7;">
          <children>
             <Polygon fill="#3ea868" layoutX="20.0" onMouseClicked="#TESTE_ALGUMA_COISA" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" userData="0-8" GridPane.columnIndex="8" GridPane.rowIndex="0">
               <points>
@@ -1658,14 +1658,14 @@
       </GridPane>
       <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
         <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" SplitPane.resizableWithParent="false">
                <children>
                   <TextArea editable="false" prefHeight="296.0" prefWidth="200.0" text="Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. &#10;&#10;Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. &#10;&#10;Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. &#10;&#10;Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. &#10;&#10;Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. &#10;&#10;Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. &#10;&#10;Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. &#10;&#10;" wrapText="true" />
                </children>
             </AnchorPane>
           <AnchorPane>
                <children>
-                  <TextField onAction="#DigitarMSG" prefHeight="25.0" prefWidth="200.0" text="Digite a sua msg aqui." />
+                  <TextField fx:id="bizingoTextField" onAction="#DigitarMSG" prefHeight="25.0" prefWidth="200.0" promptText="Digite a sua msg aqui." />
                </children>
             </AnchorPane>
         </items>

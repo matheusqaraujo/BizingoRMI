@@ -3,11 +3,16 @@ package sample;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
+
+import java.awt.*;
 
 public class Controller {
     @FXML
     public GridPane bizingoBoard;
+    public TextField bizingoTextField;
+    public TextArea bizingoTextArea;
 
     Integer posicaoAntigaX = 0;
     Integer posicaoAntigaY = 0;
@@ -40,7 +45,7 @@ public class Controller {
         else {
             GridPane.setRowIndex(origem, GridPane.getRowIndex(n));
             GridPane.setColumnIndex(origem, GridPane.getColumnIndex(n));
-            origem.setTranslateY(origem.getTranslateY() * -1);
+            //origem.setTranslateY(origem.getTranslateY() * -1);
             System.out.println("Peça movimentada");
             System.out.println("Linha: "+ posicaoAntigaX + " > " + GridPane.getRowIndex(n));
             System.out.println("Coluna: "+ posicaoAntigaY + " > " + GridPane.getColumnIndex(n));
@@ -51,11 +56,15 @@ public class Controller {
         System.out.println("----------------------");
 
     }
-
+    @FXML
     public void DigitarMSG(Event event){
 
         Node msg = (Node)event.getSource();
-
+        //String menssagem = msg.getAccessibleText();
+        //System.out.println(menssagem);
+        String menssagem = String.valueOf(bizingoTextField.getText());
+        System.out.println(menssagem);
+        bizingoTextField.setText("");
 
     }
 }
