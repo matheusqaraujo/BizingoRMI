@@ -51,4 +51,11 @@ public class Controller {
         System.out.println("----------------------");
 
     }
+
+    public void DigitarMSG(Event event){
+
+        Node msg = (Node)event.getSource();
+
+
+    }
 }
