@@ -1660,7 +1660,7 @@
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" SplitPane.resizableWithParent="false">
                <children>
-                  <TextArea editable="false" prefHeight="296.0" prefWidth="200.0" text="Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. &#10;&#10;Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. &#10;&#10;Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. &#10;&#10;Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. &#10;&#10;Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. &#10;&#10;Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. &#10;&#10;Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. Texto base para usar como exemplo. &#10;&#10;" wrapText="true" />
+                  <TextArea fx:id="bizingoTextArea" editable="false" prefHeight="296.0" prefWidth="200.0" promptText="Chat" wrapText="true" />
                </children>
             </AnchorPane>
           <AnchorPane>

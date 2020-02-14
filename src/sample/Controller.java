@@ -3,10 +3,9 @@ package sample;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
-
-import java.awt.*;
 
 public class Controller {
     @FXML
@@ -18,6 +17,8 @@ public class Controller {
     Integer posicaoAntigaY = 0;
     boolean Flag = false;
     Node origem;
+
+    StringBuilder chat = new StringBuilder();
 
     @FXML
     public void TESTE_ALGUMA_COISA(Event event){
@@ -57,14 +58,29 @@ public class Controller {
 
     }
     @FXML
-    public void DigitarMSG(Event event){
+    public void DigitarMSG(){
 
-        Node msg = (Node)event.getSource();
-        //String menssagem = msg.getAccessibleText();
-        //System.out.println(menssagem);
-        String menssagem = String.valueOf(bizingoTextField.getText());
-        System.out.println(menssagem);
+        //Node msg = (Node)event.getSource();
+        String mensagem = String.valueOf(bizingoTextField.getText());
+        System.out.println(mensagem);
         bizingoTextField.setText("");
 
+
+        //chat.append(mensagem);
+        //chat.append("\n");
+        //bizingoTextArea.setText(chat.toString());
+        //String chat = String.valueOf(bizingoTextArea.getText());
+        //System.out.println(chat);
+
+        ReceberMSG(mensagem);
     }
+
+    public void ReceberMSG(String mensagem){
+        chat.append(mensagem);
+        chat.append("\n");
+        bizingoTextArea.setText(chat.toString());
+        //bizingoTextArea.getScrollTop();
+        System.out.println(chat);
+    }
+
 }
