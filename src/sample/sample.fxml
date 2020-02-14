@@ -1666,6 +1666,9 @@
           <AnchorPane>
                <children>
                   <TextField fx:id="bizingoTextField" onAction="#DigitarMSG" prefHeight="25.0" prefWidth="200.0" promptText="Digite a sua msg aqui." />
+                  <Button layoutX="6.0" layoutY="41.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="187.0" text="Passar o turno" />
+                  <Button layoutX="5.0" layoutY="211.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="187.0" text="Reiniciar a partida" />
+                  <Button layoutX="5.0" layoutY="171.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="187.0" text="Desistir" />
                </children>
             </AnchorPane>
         </items>
