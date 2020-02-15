@@ -14,7 +14,7 @@ import java.awt.*;
 
 public class Main extends Application {
 
-    private boolean isServer = false;
+    private boolean isServer = true;
     private BizingoSocket connection = isServer ? createServer() : createClient();
 
     Controller cont;

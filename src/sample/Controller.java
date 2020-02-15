@@ -35,50 +35,34 @@ public class Controller {
 
         Node n = (Node)event.getSource();
 
+        if (Flag == false && n.getTranslateX() == 10.0){
 
-        //String[] data = ((String)n.getUserData()).split("-");
-        //System.out.println("LINHA: " + data[0]);
-        //System.out.println("COLUNA: " + data[1]);
+            origem = n;
 
-        if (n.getTranslateX() == 10.0){
-            if (Flag == false){
-                origem = n;
+            posicaoAntigaX = GridPane.getRowIndex(origem);
+            posicaoAntigaY = GridPane.getColumnIndex(origem);
 
-                posicaoAntigaX = GridPane.getRowIndex(origem);
-                posicaoAntigaY = GridPane.getColumnIndex(origem);
+            System.out.println("Peça origem");
+            System.out.println("Linha: "+ GridPane.getRowIndex(n));
+            System.out.println("Coluna: "+ GridPane.getColumnIndex(n));
 
-                System.out.println("Peça origem");
-                System.out.println("Linha: "+ GridPane.getRowIndex(n));
-                System.out.println("Coluna: "+ GridPane.getColumnIndex(n));
-
-                Flag = true;
-            }
-
-            else {
-                String jogada = "J" + "-" + posicaoAntigaX.toString() + "-" + posicaoAntigaY.toString() + "-" +  GridPane.getRowIndex(n).toString() + "-" + GridPane.getColumnIndex(n);
-                ReceberJogada(jogada);
-
-                try {
-                    connec.send(jogada);
-                } catch (Exception e) {
-                    chat.append("Failed to send \n");
-                }
-
-            /*
-            GridPane.setRowIndex(origem, GridPane.getRowIndex(n));
-            GridPane.setColumnIndex(origem, GridPane.getColumnIndexn));
-            //origem.setTranslateY(origem.getTranslateY() * -1);
-            System.out.println("Peça movimentada");
-            System.out.println("Linha: "+ posicaoAntigaX + " > " + GridPane.getRowIndex(n));
-            System.out.println("Coluna: "+ posicaoAntigaY + " > " + GridPane.getColumnIndex(n));
-            */
-                Flag = false;
-            }
-
-            System.out.println("----------------------");
+            Flag = true;
         }
 
+        else if(Flag) {
+            String jogada = "J" + "-" + posicaoAntigaX.toString() + "-" + posicaoAntigaY.toString() + "-" +  GridPane.getRowIndex(n).toString() + "-" + GridPane.getColumnIndex(n);
+            ReceberJogada(jogada);
 
+            try {
+                connec.send(jogada);
+            } catch (Exception e) {
+                chat.append("Erro ao movimentar peça.\n");
+            }
+
+            Flag = false;
+        }
+
+        System.out.println("----------------------");
     }
 
 
@@ -133,7 +117,7 @@ public class Controller {
         try {
             connec.send(mensagem);
         } catch (Exception e) {
-            chat.append("Failed to send \n");
+            chat.append("Erro ao enviar mensagem.\n");
         }
         //ReceberMSG(mensagem);
     }
