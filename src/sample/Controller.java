@@ -20,6 +20,15 @@ public class Controller {
 
     StringBuilder chat = new StringBuilder();
 
+    //Conexao
+
+    BizingoSocket connec;
+
+    public BizingoSocket getConnection(BizingoSocket connection){
+        return this.connec = connection;
+    }
+
+
     @FXML
     public void TESTE_ALGUMA_COISA(Event event){
 
@@ -59,7 +68,6 @@ public class Controller {
     }
     @FXML
     public void DigitarMSG(){
-
         //Node msg = (Node)event.getSource();
         String mensagem = String.valueOf(bizingoTextField.getText());
         System.out.println(mensagem);
@@ -72,6 +80,11 @@ public class Controller {
         //String chat = String.valueOf(bizingoTextArea.getText());
         //System.out.println(chat);
 
+        try {
+            connec.send(mensagem);
+        } catch (Exception e) {
+            //messages.appendText("Failed to send \n");
+        }
         ReceberMSG(mensagem);
     }
 

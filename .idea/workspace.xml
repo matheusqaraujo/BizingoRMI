@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Melhorando o chat">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Adicionado botões de passar o turno, desistir e reiniciar partida.">
+      <change afterPath="$PROJECT_DIR$/src/sample/BizingoSocket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +58,13 @@
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
@@ -86,9 +97,9 @@
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Multirun.Unnamed">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -136,6 +147,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Unnamed" type="CompoundRunConfigurationType">
+      <toRun name="Main" type="Application" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType">
+      <toRun name="Main" type="Application" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -145,6 +164,10 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Unnamed" type="Multirun" factoryName="Multirun" separateTabs="true" startOneByOne="true" markFailedProcess="true" hideSuccessProcess="false" delayTime="0">
+      <runConfiguration name="Main" type="Application" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
@@ -167,6 +190,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Compound.Unnamed" />
+      <item itemvalue="Multirun.Unnamed" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -186,7 +214,10 @@
       <workItem from="1580782821183" duration="887000" />
       <workItem from="1580783758742" duration="1400000" />
       <workItem from="1580849181537" duration="2086000" />
-      <workItem from="1581651692462" duration="529000" />
+      <workItem from="1581651692462" duration="3191000" />
+      <workItem from="1581775497952" duration="3894000" />
+      <workItem from="1581779427929" duration="461000" />
+      <workItem from="1581779908931" duration="10096000" />
     </task>
     <task id="LOCAL-00001" summary="Adicionando evento">
       <created>1580784340981</created>
@@ -216,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581648109180</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adicionado botões de passar o turno, desistir e reiniciar partida.">
+      <created>1581652307245</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581652307245</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,57 +267,66 @@
     <MESSAGE value="Adicionado chat" />
     <MESSAGE value="Melhorando o chat e ajustando a tela" />
     <MESSAGE value="Melhorando o chat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Melhorando o chat" />
+    <MESSAGE value="Adicionado botões de passar o turno, desistir e reiniciar partida." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionado botões de passar o turno, desistir e reiniciar partida." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="615" y="115" width="1123" height="810" key="CommitChangelistDialog2" timestamp="1581648108467">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581780393765">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="615" y="115" width="1123" height="810" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581648108467" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581780393765" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1581777366395">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581777366395" />
+    <state x="615" y="115" width="1123" height="810" key="CommitChangelistDialog2" timestamp="1581652306571">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="615" y="115" width="1123" height="810" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581652306571" />
     <state x="184" y="91" key="DiffContextDialog" timestamp="1581633900850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="91" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581633900850" />
-    <state width="1877" height="104" key="GridCell.Tab.0.bottom" timestamp="1581652222431">
+    <state width="1877" height="296" key="GridCell.Tab.0.bottom" timestamp="1581790734609">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="104" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581652222431" />
-    <state width="1877" height="104" key="GridCell.Tab.0.center" timestamp="1581652222431">
+    <state width="1877" height="296" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581790734609" />
+    <state width="1877" height="296" key="GridCell.Tab.0.center" timestamp="1581790734609">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="104" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581652222431" />
-    <state width="1877" height="104" key="GridCell.Tab.0.left" timestamp="1581652222431">
+    <state width="1877" height="296" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581790734609" />
+    <state width="1877" height="296" key="GridCell.Tab.0.left" timestamp="1581790734608">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="104" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581652222431" />
-    <state width="1877" height="104" key="GridCell.Tab.0.right" timestamp="1581652222431">
+    <state width="1877" height="296" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581790734608" />
+    <state width="1877" height="296" key="GridCell.Tab.0.right" timestamp="1581790734609">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="104" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581652222431" />
-    <state width="1877" height="208" key="GridCell.Tab.1.bottom" timestamp="1581649207186">
+    <state width="1877" height="296" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581790734609" />
+    <state width="1877" height="208" key="GridCell.Tab.1.bottom" timestamp="1581790353622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="208" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581649207186" />
-    <state width="1877" height="208" key="GridCell.Tab.1.center" timestamp="1581649207186">
+    <state width="1877" height="208" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581790353622" />
+    <state width="1877" height="208" key="GridCell.Tab.1.center" timestamp="1581790353622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="208" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581649207186" />
-    <state width="1877" height="208" key="GridCell.Tab.1.left" timestamp="1581649207186">
+    <state width="1877" height="208" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581790353622" />
+    <state width="1877" height="208" key="GridCell.Tab.1.left" timestamp="1581790353622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="208" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581649207186" />
-    <state width="1877" height="208" key="GridCell.Tab.1.right" timestamp="1581649207186">
+    <state width="1877" height="208" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581790353622" />
+    <state width="1877" height="208" key="GridCell.Tab.1.right" timestamp="1581790353622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="208" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581649207186" />
-    <state x="456" y="129" key="SettingsEditor" timestamp="1580781650600">
+    <state width="1877" height="208" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581790353622" />
+    <state x="456" y="129" key="SettingsEditor" timestamp="1581779889262">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="456" y="129" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580781650600" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1581648110940">
+    <state x="456" y="129" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581779889262" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1581652310065">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581648110940" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581652310065" />
     <state x="661" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580776936901">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
