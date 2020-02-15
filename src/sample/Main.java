@@ -86,17 +86,23 @@ public class Main extends Application {
 
     private Server createServer(){
         return new Server(1234, data -> {
-                Platform.runLater(() ->{
-                    cont.bizingoTextArea.setText(data.toString());
-                    //messages.appendText(data.toString() + "\n");
-                });
+            Platform.runLater(() ->{
+                cont.Acao(data.toString());
+                //cont.ReceberJogada(data.toString());
+                //cont.ReceberMSG(data.toString());
+                //cont.bizingoTextArea.setText(data.toString());
+                //messages.appendText(data.toString() + "\n");
+            });
         });
     }
 
     private Client createClient(){
         return new Client("127.0.0.1",1234, data -> {
             Platform.runLater(() ->{
-                cont.bizingoTextArea.setText(data.toString());
+                cont.Acao(data.toString());
+                //cont.ReceberJogada(data.toString());
+                //cont.ReceberMSG(data.toString());
+                //cont.bizingoTextArea.setText(data.toString());
                 //messages.appendText(data.toString() + "\n");
             });
         });
