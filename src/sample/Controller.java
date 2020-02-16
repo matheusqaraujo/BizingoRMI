@@ -180,7 +180,7 @@ public class Controller {
     }
 
     public void Desistir(){
-        String msg = "D"+"-"+nomeJogador;
+        String msg = "D" + "-" + nomeJogador;
 
         try {
             connec.send(msg);
