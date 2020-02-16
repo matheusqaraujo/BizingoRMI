@@ -26,13 +26,13 @@ public class Controller {
 
     BizingoSocket connec;
 
-    public void getConnection(BizingoSocket connection){
+    public void setConnection(BizingoSocket connection){
         this.connec = connection;
     }
 
     String nomeJogador;
 
-    public void getNome (String nome){
+    public void setNome (String nome){
         this.nomeJogador = nome;
     }
 
@@ -144,7 +144,7 @@ public class Controller {
 
     @FXML
     public void DigitarMSG(){
-        String mensagem = "M" + "-";
+        String mensagem = "M" + "-" + nomeJogador + ": ";
         mensagem += String.valueOf(bizingoTextField.getText());
 
         String[] msg = (mensagem).split("-");
@@ -197,7 +197,7 @@ public class Controller {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("MENSAGEM");
         alert.setHeaderText(null);
-        alert.setContentText("O jogador desistiu!");
+        alert.setContentText("O jogador " + nomeJogador + " desistiu!");
         alert.showAndWait();
     }
 

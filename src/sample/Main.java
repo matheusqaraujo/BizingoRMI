@@ -8,16 +8,24 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
+    // Argumentos
+    boolean jogadorTipo = true;
+    String jogadorNome = "Fulano";
+    String jogadorIP = "127.0.0.1";
+    Integer jogadorPort = 1234;
 
-    private boolean isServer = false;
-    private BizingoSocket connection = isServer ? createServer() : createClient();
+
+    //private boolean isServer = true;
+    private BizingoSocket connection = jogadorTipo ? createServer() : createClient();
+    //private BizingoSocket connection = isServer ? createServer() : createClient();
+    //private String nomeJogador = isServer ? "Server" : "Client";
 
     Controller cont;
     private Controller setController(Controller controller){
         return this.cont = controller;
     }
 
-    private String nomeJogador = "";
+
 
     @Override
     public void init() throws Exception{
@@ -34,8 +42,10 @@ public class Main extends Application {
         primaryStage.show();
 
         Controller ctrl = loader.getController();
-        ctrl.getConnection(connection);
+        ctrl.setConnection(connection);
         setController(ctrl);
+
+        ctrl.setNome(jogadorNome);
     }
 
     @Override
@@ -44,7 +54,7 @@ public class Main extends Application {
     }
 
     private Server createServer(){
-        return new Server(1234, data -> {
+        return new Server(jogadorPort, data -> {
             Platform.runLater(() ->{
                 cont.Acao(data.toString());
             });
@@ -52,7 +62,7 @@ public class Main extends Application {
     }
 
     private Client createClient(){
-        return new Client("127.0.0.1",1234, data -> {
+        return new Client(jogadorIP,jogadorPort, data -> {
             Platform.runLater(() ->{
                 cont.Acao(data.toString());
             });
