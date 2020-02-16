@@ -56,7 +56,7 @@ public abstract class BizingoSocket {
 
             }
             catch (Exception e) {
-                onReceiveCallback.accept("Connection Closed");
+                onReceiveCallback.accept("Conexão fechada.");
             }
         }
     }

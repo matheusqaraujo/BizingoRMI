@@ -4,6 +4,7 @@ import javafx.collections.ObservableList;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
@@ -77,7 +78,7 @@ public class Controller {
 
         Node original = null;
 
-        bizingoBoard.getChildren();
+        //bizingoBoard.getChildren();
         ObservableList<Node> childrens = bizingoBoard.getChildren();
         for (Node node : childrens) {
             if(bizingoBoard.getRowIndex(node) == antigoX && bizingoBoard.getColumnIndex(node) == antigoY && node.getTranslateX() == 10.0 )  {
@@ -98,7 +99,6 @@ public class Controller {
 
     @FXML
     public void DigitarMSG(){
-        //Node msg = (Node)event.getSource();
         String mensagem = "M" + "-";
         mensagem += String.valueOf(bizingoTextField.getText());
 
@@ -106,7 +106,6 @@ public class Controller {
 
         System.out.println(mensagem);
         bizingoTextField.setText("");
-
 
         chat.append(msg[1]);
         chat.append("\n");
@@ -119,7 +118,6 @@ public class Controller {
         } catch (Exception e) {
             chat.append("Erro ao enviar mensagem.\n");
         }
-        //ReceberMSG(mensagem);
     }
 
     public void ReceberMSG(String mensagem){
@@ -134,7 +132,25 @@ public class Controller {
 
     public void ReiniciarPartida(){}
 
-    public void Desistir(){}
+    public void Desistir(){
+        String msg = "D";
+
+        try {
+            connec.send(msg);
+        } catch (Exception e) {
+            chat.append("Erro ao enviar mensagem.\n");
+        }
+
+        DesistirTela();
+    }
+
+    public void DesistirTela(){
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("MENSAGEM");
+        alert.setHeaderText(null);
+        alert.setContentText("O jogador desistiu!");
+        alert.showAndWait();
+    }
 
     public void Acao(String acao){
 
@@ -153,7 +169,7 @@ public class Controller {
                 ReiniciarPartida();
                 break;
             case "D":
-                Desistir();
+                DesistirTela();
                 break;
         }
     }
