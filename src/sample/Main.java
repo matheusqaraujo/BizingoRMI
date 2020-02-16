@@ -9,13 +9,15 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-    private boolean isServer = true;
+    private boolean isServer = false;
     private BizingoSocket connection = isServer ? createServer() : createClient();
 
     Controller cont;
-    private Controller getController(Controller controller){
+    private Controller setController(Controller controller){
         return this.cont = controller;
     }
+
+    private String nomeJogador = "";
 
     @Override
     public void init() throws Exception{
@@ -33,7 +35,7 @@ public class Main extends Application {
 
         Controller ctrl = loader.getController();
         ctrl.getConnection(connection);
-        getController(ctrl);
+        setController(ctrl);
     }
 
     @Override

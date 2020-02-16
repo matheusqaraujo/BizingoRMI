@@ -26,13 +26,19 @@ public class Controller {
 
     BizingoSocket connec;
 
-    public BizingoSocket getConnection(BizingoSocket connection){
-        return this.connec = connection;
+    public void getConnection(BizingoSocket connection){
+        this.connec = connection;
+    }
+
+    String nomeJogador;
+
+    public void getNome (String nome){
+        this.nomeJogador = nome;
     }
 
 
     @FXML
-    public void TESTE_ALGUMA_COISA(Event event){
+    public void FazerJogada(Event event){
 
         Node n = (Node)event.getSource();
 
@@ -44,8 +50,8 @@ public class Controller {
             posicaoAntigaY = GridPane.getColumnIndex(origem);
 
             System.out.println("Peça origem");
-            System.out.println("Linha: "+ GridPane.getRowIndex(n));
-            System.out.println("Coluna: "+ GridPane.getColumnIndex(n));
+            System.out.println("Linha: "+ posicaoAntigaX);
+            System.out.println("Coluna: "+ posicaoAntigaY);
 
             Flag = true;
         }
@@ -93,10 +99,9 @@ public class Controller {
 
         Node original = null;
 
-        //bizingoBoard.getChildren();
         ObservableList<Node> childrens = bizingoBoard.getChildren();
         for (Node node : childrens) {
-            if(bizingoBoard.getRowIndex(node) == antigoX && bizingoBoard.getColumnIndex(node) == antigoY && node.getTranslateX() == 10.0 )  {
+            if(bizingoBoard.getRowIndex(node) == antigoX && bizingoBoard.getColumnIndex(node) == antigoY && node.getTranslateX() == 10.0 ){
                 original = node;
                 break;
             }
@@ -122,7 +127,7 @@ public class Controller {
             alert.setTitle("MENSAGEM");
             alert.setHeaderText(null);
             alert.setContentText(vencedor);
-            alert.showAndWait();
+            alert.show();
         }
         else if (x == 10 && y >= 1 && y <= 19){
             String vencedor = "O jogador 1 ganhou!";
@@ -131,7 +136,7 @@ public class Controller {
             alert.setTitle("MENSAGEM");
             alert.setHeaderText(null);
             alert.setContentText(vencedor);
-            alert.showAndWait();
+            alert.show();
         }
 
 
@@ -169,7 +174,10 @@ public class Controller {
         System.out.println(chat);
     }
 
-    public void ReiniciarPartida(){}
+    public void ReiniciarPartida(){
+        //primaryStage.hide();
+        //start(new Stage());
+    }
 
     public void Desistir(){
         String msg = "D";
