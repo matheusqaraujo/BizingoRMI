@@ -5,8 +5,8 @@ import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import jdk.nashorn.internal.runtime.regexp.joni.constants.Arguments;
 
 public class Main extends Application {
     // Argumentos
@@ -44,7 +44,8 @@ public class Main extends Application {
         //Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         FXMLLoader loader = new FXMLLoader(getClass().getResource("sample.fxml"));
         Parent root = loader.load();
-        primaryStage.setTitle("Bizingo");
+        primaryStage.setTitle("Bizingo: " + jogadorNome);
+        primaryStage.getIcons().add(new Image("file:src/ifce1.png"));
         primaryStage.setScene(new Scene(root, 1008, 602));
         primaryStage.show();
 
