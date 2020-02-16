@@ -14,7 +14,7 @@ public abstract class BizingoSocket {
 
     public BizingoSocket(Consumer<Serializable> onReceiveCallback){
         this.onReceiveCallback = onReceiveCallback;
-        connThread.setDaemon(true);
+        //connThread.setDaemon(true);
     }
 
     public void startConnection() throws Exception{
