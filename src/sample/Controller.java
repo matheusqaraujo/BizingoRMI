@@ -180,7 +180,7 @@ public class Controller {
     }
 
     public void Desistir(){
-        String msg = "D";
+        String msg = "D"+"-"+nomeJogador;
 
         try {
             connec.send(msg);
@@ -188,16 +188,19 @@ public class Controller {
             chat.append("Erro ao enviar mensagem.\n");
         }
 
-        DesistirTela();
+
+        DesistirTela(msg);
 
         System.exit(0);
     }
 
-    public void DesistirTela(){
+    public void DesistirTela(String nome){
+        String[] data = (nome).split("-");
+
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("MENSAGEM");
         alert.setHeaderText(null);
-        alert.setContentText("O jogador " + nomeJogador + " desistiu!");
+        alert.setContentText("O jogador " + data[1] + " desistiu!");
         alert.showAndWait();
     }
 
@@ -218,7 +221,7 @@ public class Controller {
                 ReiniciarPartida();
                 break;
             case "D":
-                DesistirTela();
+                DesistirTela(acao);
                 break;
         }
     }
