@@ -54,6 +54,7 @@ public class Controller {
             String jogada = "J" + "-" + posicaoAntigaX.toString() + "-" + posicaoAntigaY.toString() + "-" +  GridPane.getRowIndex(n).toString() + "-" + GridPane.getColumnIndex(n);
             ReceberJogada(jogada);
 
+
             try {
                 connec.send(jogada);
             } catch (Exception e) {
@@ -64,6 +65,20 @@ public class Controller {
         }
 
         System.out.println("----------------------");
+    }
+
+    //boolean meuTurno = true;
+
+    public void Turno (boolean meuTurno){
+        if (meuTurno){
+            this.bizingoBoard.setDisable(false);
+            //meuTurno = false;
+        }
+
+        else{
+            this.bizingoBoard.setDisable(true);
+            //meuTurno = true;
+        }
     }
 
 
@@ -94,6 +109,31 @@ public class Controller {
         System.out.println("Peça movimentada");
         System.out.println("Linha: "+ posicaoAntigaX + " > " + novoX);
         System.out.println("Coluna: "+ posicaoAntigaY + " > " + novoY);
+
+        CondicaoVitoria(novoX, novoY);
+    }
+
+    public void CondicaoVitoria(int x, int y){
+
+        if (x == 0 && y >= 8 && y <= 12){
+            String vencedor = "O jogador 2 ganhou!";
+
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("MENSAGEM");
+            alert.setHeaderText(null);
+            alert.setContentText(vencedor);
+            alert.showAndWait();
+        }
+        else if (x == 10 && y >= 1 && y <= 19){
+            String vencedor = "O jogador 1 ganhou!";
+
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("MENSAGEM");
+            alert.setHeaderText(null);
+            alert.setContentText(vencedor);
+            alert.showAndWait();
+        }
+
 
     }
 
@@ -126,7 +166,6 @@ public class Controller {
         chat.append(msg[1]);
         chat.append("\n");
         bizingoTextArea.setText(chat.toString());
-        //bizingoTextArea.getScrollTop();
         System.out.println(chat);
     }
 
@@ -142,6 +181,8 @@ public class Controller {
         }
 
         DesistirTela();
+
+        System.exit(0);
     }
 
     public void DesistirTela(){
