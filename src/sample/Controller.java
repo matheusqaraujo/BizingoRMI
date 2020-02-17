@@ -5,6 +5,7 @@ import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
@@ -14,6 +15,7 @@ public class Controller {
     public GridPane bizingoBoard;
     public TextField bizingoTextField;
     public TextArea bizingoTextArea;
+    public Button buttonComecar;
 
     Integer posicaoAntigaX = 0;
     Integer posicaoAntigaY = 0;
@@ -112,6 +114,28 @@ public class Controller {
         bizingoBoard.setDisable(false);
         bizingoBoard.setStyle("-fx-background-color: #cbecd7");
         bizingoBoard.setOpacity(1);
+    }
+
+    public void buttonComecar(){
+        bizingoBoard.setDisable(false);
+        bizingoBoard.setStyle("-fx-background-color: #cbecd7");
+        bizingoBoard.setOpacity(1);
+
+        String jogada = "B";
+
+        try {
+            connec.send(jogada);
+        } catch (Exception e) {
+            chat.append("Erro ao trocar turno.\n");
+        }
+
+        buttonComecar.setDisable(true);
+        buttonComecar.setOpacity(0);
+    }
+
+    public void ComecarJogo(){
+        buttonComecar.setDisable(true);
+        buttonComecar.setOpacity(0);
     }
 
 
@@ -282,6 +306,9 @@ public class Controller {
                 break;
             case "N":
                 NovaTela();
+                break;
+            case "B":
+                ComecarJogo();
                 break;
         }
     }

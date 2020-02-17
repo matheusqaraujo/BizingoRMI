@@ -7,7 +7,7 @@
 
 <SplitPane dividerPositions="0.5" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <items>
-      <GridPane id="bizingoBoard" fx:id="bizingoBoard" alignment="center" maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #cbecd7;">
+      <GridPane id="bizingoBoard" fx:id="bizingoBoard" alignment="center" disable="true" maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" opacity="0.5" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #cbecd7;">
          <children>
             <Polygon fill="#3ea868" layoutX="20.0" onMouseClicked="#FazerJogada" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" userData="0-8" GridPane.columnIndex="8" GridPane.rowIndex="0">
                <points>
@@ -1669,6 +1669,7 @@
                   <Button layoutX="6.0" layoutY="41.0" mnemonicParsing="false" onMouseClicked="#Turno" prefHeight="25.0" prefWidth="187.0" text="Passar o turno" />
                   <Button layoutX="5.0" layoutY="211.0" mnemonicParsing="false" onAction="#ReiniciarPartida" prefHeight="25.0" prefWidth="187.0" text="Reiniciar a partida" />
                   <Button layoutX="5.0" layoutY="171.0" mnemonicParsing="false" onMouseClicked="#Desistir" prefHeight="25.0" prefWidth="187.0" text="Desistir" />
+                  <Button fx:id="buttonComecar" layoutX="6.0" layoutY="101.0" mnemonicParsing="false" onMouseClicked="#buttonComecar" prefHeight="25.0" prefWidth="187.0" style="-fx-background-color: red; -fx-border-color: black; -fx-font-weight: bold; -fx-text-fill: white;" text="Começar" />
                </children>
             </AnchorPane>
          </items>
