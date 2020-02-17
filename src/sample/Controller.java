@@ -23,7 +23,6 @@ public class Controller {
     StringBuilder chat = new StringBuilder();
 
     //Conexao
-
     BizingoSocket connec;
 
     public void setConnection(BizingoSocket connection){
@@ -31,13 +30,13 @@ public class Controller {
     }
 
     // Dados do Jogador
-
     String nomeJogador;
     Integer numJogador;
 
     public void setNome (String nome){
         this.nomeJogador = nome;
     }
+
     public void setNum (Integer num){
         this.numJogador = num;
     }
@@ -74,7 +73,6 @@ public class Controller {
             }
 
             Flag = false;
-            //Turno();
         }
 
         System.out.println("----------------------");
@@ -125,7 +123,6 @@ public class Controller {
         System.out.println("!!!!!!!");
         GridPane.setRowIndex(original, novoX);
         GridPane.setColumnIndex(original, novoY);
-        //origem.setTranslateY(origem.getTranslateY() * -1);
         System.out.println("Peça movimentada");
         System.out.println("Linha: "+ posicaoAntigaX + " > " + novoX);
         System.out.println("Coluna: "+ posicaoAntigaY + " > " + novoY);
@@ -170,8 +167,7 @@ public class Controller {
         chat.append(msg[1]);
         chat.append("\n");
         bizingoTextArea.setText(chat.toString());
-        //String chat = String.valueOf(bizingoTextArea.getText());
-        //System.out.println(chat);
+        bizingoTextArea.setScrollTop(Double.MAX_VALUE);
 
         try {
             connec.send(mensagem);
@@ -186,12 +182,41 @@ public class Controller {
         chat.append(msg[1]);
         chat.append("\n");
         bizingoTextArea.setText(chat.toString());
+        bizingoTextArea.setScrollTop(Double.MAX_VALUE);
         System.out.println(chat);
     }
 
     public void ReiniciarPartida(){
-        //primaryStage.hide();
-        //start(new Stage());
+        String mensagem = "N";
+
+        try {
+            connec.send(mensagem);
+        } catch (Exception e) {
+            chat.append("Erro ao enviar mensagem.\n");
+        }
+
+        NovaTela();
+    }
+
+    public void NovaTela(){
+        //tabuleiroJogador.hide();
+        //tabuleiroJogador.setTitle("Bizingo [" + nomeJogador + " | Jogador: " + numJogador + " ]");
+        //tabuleiroJogador.getIcons().add(new Image("file:src/ifce1.png"));
+        //tabuleiroJogador.setScene(new Scene(rootJogador, 1008, 602));
+        //tabuleiroJogador.show();
+        //Node x = bizingoBoard.getChildren();
+        //bizingoBoard.add();
+
+        /*
+        ObservableList<Node> childrens = bizingoBoard.getChildren();
+        for (Node node : childrens) {
+            if(bizingoBoard.getRowIndex(node) == antigoX && bizingoBoard.getColumnIndex(node) == antigoY){
+                bizingoBoard.add(node);
+            }
+
+        }
+
+         */
     }
 
     public void Desistir(){
@@ -240,6 +265,9 @@ public class Controller {
                 break;
             case "L":
                 TravarTela();
+                break;
+            case "N":
+                NovaTela();
                 break;
         }
     }

@@ -10,7 +10,6 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
     // Argumentos
-
     static boolean jogadorTipo; //= false;
     static String jogadorNome; //= "Sicrano";
     static String jogadorIP; //= "127.0.0.1";
@@ -25,11 +24,10 @@ public class Main extends Application {
         jogadorNum = num; //= 2;
     }
 
-    //private boolean isServer = true;
-    private BizingoSocket connection;// = jogadorTipo ? createServer() : createClient();
-    //private BizingoSocket connection = isServer ? createServer() : createClient();
-    //private String nomeJogador = isServer ? "Server" : "Client";
+    // Conexão
+    private BizingoSocket connection;
 
+    // Controller
     Controller cont;
     private Controller setController(Controller controller){
         return this.cont = controller;
@@ -43,7 +41,6 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        //Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         FXMLLoader loader = new FXMLLoader(getClass().getResource("sample.fxml"));
         Parent root = loader.load();
         primaryStage.setTitle("Bizingo [" + jogadorNome + " | Jogador: " + jogadorNum + " ]");
