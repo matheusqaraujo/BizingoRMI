@@ -47,7 +47,21 @@ public class Controller {
 
         Node n = (Node)event.getSource();
 
-        if (Flag == false && n.getTranslateX() == 10.0){
+        if (Flag == false && n.getTranslateX() == 10.0 && numJogador == 1 && n.getTranslateY() == 5.00){
+
+            origem = n;
+
+            posicaoAntigaX = GridPane.getRowIndex(origem);
+            posicaoAntigaY = GridPane.getColumnIndex(origem);
+
+            System.out.println("Peça origem");
+            System.out.println("Linha: "+ posicaoAntigaX);
+            System.out.println("Coluna: "+ posicaoAntigaY);
+
+            Flag = true;
+        }
+
+        else if (Flag == false && n.getTranslateX() == 10.0 && numJogador == 2 && n.getTranslateY() == -5.00){
 
             origem = n;
 
@@ -127,12 +141,12 @@ public class Controller {
         System.out.println("Linha: "+ posicaoAntigaX + " > " + novoX);
         System.out.println("Coluna: "+ posicaoAntigaY + " > " + novoY);
 
-        CondicaoVitoria(novoX, novoY);
+        CondicaoVitoria(novoX, novoY, original.getTranslateY());
     }
 
-    public void CondicaoVitoria(int x, int y){
+    public void CondicaoVitoria(int x, int y, double peca){
 
-        if (x == 0 && y >= 8 && y <= 12){
+        if (x == 0 && y >= 8 && y <= 12 && peca == -5.00){
             String vencedor = "O jogador 2 ganhou!";
 
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -141,7 +155,7 @@ public class Controller {
             alert.setContentText(vencedor);
             alert.show();
         }
-        else if (x == 10 && y >= 1 && y <= 19){
+        else if (x == 10 && y >= 1 && y <= 19 && peca == 5.00){
             String vencedor = "O jogador 1 ganhou!";
 
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
