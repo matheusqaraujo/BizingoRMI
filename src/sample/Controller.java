@@ -30,10 +30,16 @@ public class Controller {
         this.connec = connection;
     }
 
+    // Dados do Jogador
+
     String nomeJogador;
+    Integer numJogador;
 
     public void setNome (String nome){
         this.nomeJogador = nome;
+    }
+    public void setNum (Integer num){
+        this.numJogador = num;
     }
 
 
@@ -68,23 +74,32 @@ public class Controller {
             }
 
             Flag = false;
+            //Turno();
         }
 
         System.out.println("----------------------");
     }
 
-    //boolean meuTurno = true;
+    public void Turno (){
+        String jogada = "L";
 
-    public void Turno (boolean meuTurno){
-        if (meuTurno){
-            this.bizingoBoard.setDisable(false);
-            //meuTurno = false;
+
+        this.bizingoBoard.setDisable(true);
+        this.bizingoBoard.setStyle("-fx-background-color: BLACK");
+        this.bizingoBoard.setOpacity(0.7);
+
+        try {
+            connec.send(jogada);
+        } catch (Exception e) {
+            chat.append("Erro ao trocar turno.\n");
         }
 
-        else{
-            this.bizingoBoard.setDisable(true);
-            //meuTurno = true;
-        }
+    }
+
+    public void TravarTela(){
+        bizingoBoard.setDisable(false);
+        bizingoBoard.setStyle("-fx-background-color: #cbecd7");
+        bizingoBoard.setOpacity(1);
     }
 
 
@@ -222,6 +237,9 @@ public class Controller {
                 break;
             case "D":
                 DesistirTela(acao);
+                break;
+            case "L":
+                TravarTela();
                 break;
         }
     }

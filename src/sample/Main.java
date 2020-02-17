@@ -15,12 +15,14 @@ public class Main extends Application {
     static String jogadorNome; //= "Sicrano";
     static String jogadorIP; //= "127.0.0.1";
     static Integer jogadorPort; //= 1234;
+    static Integer jogadorNum; //= 2;
 
-    private static void setArgumentos(boolean tipo, String nome, String IP, int Port){
+    private static void setArgumentos(boolean tipo, String nome, String IP, int Port, int num){
         jogadorTipo = tipo; //= false;
         jogadorNome = nome; //= "Sicrano";
         jogadorIP = IP; //= "127.0.0.1";
         jogadorPort = Port; //= 1234;
+        jogadorNum = num; //= 2;
     }
 
     //private boolean isServer = true;
@@ -44,7 +46,7 @@ public class Main extends Application {
         //Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         FXMLLoader loader = new FXMLLoader(getClass().getResource("sample.fxml"));
         Parent root = loader.load();
-        primaryStage.setTitle("Bizingo: " + jogadorNome);
+        primaryStage.setTitle("Bizingo [" + jogadorNome + " | Jogador: " + jogadorNum + " ]");
         primaryStage.getIcons().add(new Image("file:src/ifce1.png"));
         primaryStage.setScene(new Scene(root, 1008, 602));
         primaryStage.show();
@@ -54,6 +56,7 @@ public class Main extends Application {
         setController(ctrl);
 
         ctrl.setNome(jogadorNome);
+        ctrl.setNum(jogadorNum);
     }
 
     @Override
@@ -83,8 +86,9 @@ public class Main extends Application {
         String Nome = args[1];
         String IP = args[2];
         Integer Port = Integer.parseInt(args[3]);
+        Integer numero = Integer.parseInt(args[4]);
 
-        setArgumentos(Tipo, Nome, IP, Port);
+        setArgumentos(Tipo, Nome, IP, Port, numero);
 
         launch(args);
     }
