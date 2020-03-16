@@ -1,31 +1,34 @@
 package sample;
 
 import javafx.application.Application;
-import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+
 public class Main extends Application {
+
+    private CommunicationImpl serverCommunicationImpl;
+    private ICommunication oponentCommunication;
+    private Registry registry;
+
     // Argumentos
-    static boolean jogadorTipo; //= false;
-    static String jogadorNome; //= "Sicrano";
-    static String jogadorIP; //= "127.0.0.1";
-    static Integer jogadorPort; //= 1234;
-    static Integer jogadorNum; //= 2;
+    static String jogadorNome; //= "Fulano";
+    static Integer jogadorPort; //= 3000;
+    static Integer jogadorNum; //= 1;
 
-    private static void setArgumentos(boolean tipo, String nome, String IP, int Port, int num){
-        jogadorTipo = tipo; //= false;
-        jogadorNome = nome; //= "Sicrano";
-        jogadorIP = IP; //= "127.0.0.1";
-        jogadorPort = Port; //= 1234;
-        jogadorNum = num; //= 2;
+    private static void setArgumentos(String nome, int Port, int num){
+        jogadorNome = nome; //= "Fulano";
+        jogadorPort = Port; //= 3000;
+        jogadorNum = num; //= 1;
     }
-
-    // Conexão
-    private BizingoSocket connection;
 
     // Controller
     Controller cont;
@@ -34,13 +37,12 @@ public class Main extends Application {
     }
 
     @Override
-    public void init() throws Exception{
-        connection = jogadorTipo ? createServer() : createClient();
-        connection.startConnection();
-    }
-
-    @Override
     public void start(Stage primaryStage) throws Exception{
+        initServerCommunication();
+        if (jogadorNum == 2) {
+            initClientCommunication();
+        }
+
         FXMLLoader loader = new FXMLLoader(getClass().getResource("sample.fxml"));
         Parent root = loader.load();
         primaryStage.setTitle("Bizingo [" + jogadorNome + " | Jogador: " + jogadorNum + " ]");
@@ -49,43 +51,44 @@ public class Main extends Application {
         primaryStage.show();
 
         Controller ctrl = loader.getController();
-        ctrl.setConnection(connection);
         setController(ctrl);
-
+        serverCommunicationImpl.setControllerRMI(ctrl);
         ctrl.setNome(jogadorNome);
         ctrl.setNum(jogadorNum);
+        ctrl.setPort(jogadorPort);
+        ctrl.setConnection(oponentCommunication);
+        ctrl.setRegistry(registry);
     }
 
-    @Override
-    public void stop() throws Exception{
-        connection.closeConnection();
+
+    private void initClientCommunication() {
+        try {
+            this.oponentCommunication = (ICommunication) LocateRegistry.getRegistry(jogadorPort).lookup("Communication" + jogadorNum);
+        } catch (RemoteException | NotBoundException e) {
+            e.printStackTrace();
+        }
     }
 
-    private Server createServer(){
-        return new Server(jogadorPort, data -> {
-            Platform.runLater(() ->{
-                cont.Acao(data.toString());
-            });
-        });
-    }
-
-    private Client createClient(){
-        return new Client(jogadorIP,jogadorPort, data -> {
-            Platform.runLater(() ->{
-                cont.Acao(data.toString());
-            });
-        });
+    private void initServerCommunication() {
+        try {
+            this.serverCommunicationImpl = new CommunicationImpl(this.cont,() -> {initClientCommunication();});
+            ICommunication stub = (ICommunication) UnicastRemoteObject.exportObject(serverCommunicationImpl, 0);
+            if (jogadorNum == 1)
+                registry = LocateRegistry.createRegistry(jogadorPort);
+            else
+                registry = LocateRegistry.getRegistry(jogadorPort);
+            registry.rebind("Communication" + jogadorNum, stub);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void main(String[] args) {
+        String Nome = args[0];
+        Integer Port = Integer.parseInt(args[1]);
+        Integer numero = Integer.parseInt(args[2]);
 
-        Boolean Tipo = Boolean.parseBoolean(args[0]);
-        String Nome = args[1];
-        String IP = args[2];
-        Integer Port = Integer.parseInt(args[3]);
-        Integer numero = Integer.parseInt(args[4]);
-
-        setArgumentos(Tipo, Nome, IP, Port, numero);
+        setArgumentos(Nome, Port, numero);
 
         launch(args);
     }

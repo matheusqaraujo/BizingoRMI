@@ -10,6 +10,13 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+
+import sample.ICommunication;
+
 public class Controller {
 
     public GridPane bizingoBoard;
@@ -24,24 +31,33 @@ public class Controller {
 
     StringBuilder chat = new StringBuilder();
 
-    //Conexao
-    BizingoSocket connec;
-
-    public void setConnection(BizingoSocket connection){
-        this.connec = connection;
-    }
 
     // Dados do Jogador
     String nomeJogador;
     Integer numJogador;
+    Integer portJogador;
+
+    public ICommunication oponentCommunication;
+    public Registry registry;
+
 
     public void setNome (String nome){
         this.nomeJogador = nome;
     }
-
     public void setNum (Integer num){
         this.numJogador = num;
     }
+    public void setPort (Integer port){
+        this.portJogador = port;
+    }
+    public void setConnection (ICommunication conec){
+        this.oponentCommunication = conec;
+    }
+    public void setRegistry (Registry reg){
+        this.registry = reg;
+    }
+
+
 
 
     @FXML
@@ -78,12 +94,12 @@ public class Controller {
         }
 
         else if(Flag) {
-            String jogada = "J" + "-" + posicaoAntigaX.toString() + "-" + posicaoAntigaY.toString() + "-" +  GridPane.getRowIndex(n).toString() + "-" + GridPane.getColumnIndex(n);
+            String jogada = posicaoAntigaX.toString() + "-" + posicaoAntigaY.toString() + "-" +  GridPane.getRowIndex(n).toString() + "-" + GridPane.getColumnIndex(n);
             ReceberJogada(jogada);
 
-
             try {
-                connec.send(jogada);
+                this.oponentCommunication.ReceberJogada(jogada);
+                //connec.send(jogada);
             } catch (Exception e) {
                 chat.append("Erro ao movimentar peça.\n");
             }
@@ -95,15 +111,12 @@ public class Controller {
     }
 
     public void Turno (){
-        String jogada = "L";
-
-
         this.bizingoBoard.setDisable(true);
         this.bizingoBoard.setStyle("-fx-background-color: BLACK");
         this.bizingoBoard.setOpacity(0.7);
 
         try {
-            connec.send(jogada);
+            this.oponentCommunication.TravarTela();
         } catch (Exception e) {
             chat.append("Erro ao trocar turno.\n");
         }
@@ -116,15 +129,14 @@ public class Controller {
         bizingoBoard.setOpacity(1);
     }
 
+    @FXML
     public void buttonComecar(){
         bizingoBoard.setDisable(false);
         bizingoBoard.setStyle("-fx-background-color: #cbecd7");
         bizingoBoard.setOpacity(1);
 
-        String jogada = "B";
-
         try {
-            connec.send(jogada);
+            this.oponentCommunication.ComecarJogo();
         } catch (Exception e) {
             chat.append("Erro ao trocar turno.\n");
         }
@@ -133,6 +145,7 @@ public class Controller {
         buttonComecar.setOpacity(0);
     }
 
+    @FXML
     public void ComecarJogo(){
         buttonComecar.setDisable(true);
         buttonComecar.setOpacity(0);
@@ -143,10 +156,10 @@ public class Controller {
 
         String[] data = (jogada).split("-");
 
-        int antigoX = Integer.parseInt(data[1]);
-        int antigoY = Integer.parseInt(data[2]);
-        int novoX = Integer.parseInt(data[3]);
-        int novoY = Integer.parseInt(data[4]);
+        int antigoX = Integer.parseInt(data[0]);
+        int antigoY = Integer.parseInt(data[1]);
+        int novoX = Integer.parseInt(data[2]);
+        int novoY = Integer.parseInt(data[3]);
 
         Node original = null;
 
@@ -208,7 +221,8 @@ public class Controller {
         bizingoTextArea.setScrollTop(Double.MAX_VALUE);
 
         try {
-            connec.send(mensagem);
+            this.oponentCommunication.ReceberMSG(mensagem);
+            //connec.send(mensagem);
         } catch (Exception e) {
             chat.append("Erro ao enviar mensagem.\n");
         }
@@ -227,11 +241,14 @@ public class Controller {
     public void ReiniciarPartida(){
         String mensagem = "N";
 
+        /*
         try {
             connec.send(mensagem);
         } catch (Exception e) {
             chat.append("Erro ao enviar mensagem.\n");
         }
+
+         */
 
         NovaTela();
     }
@@ -260,14 +277,23 @@ public class Controller {
     public void Desistir(){
         String msg = "D" + "-" + nomeJogador;
 
+
         try {
-            connec.send(msg);
+            this.oponentCommunication.DesistirTela(msg);
+            //connec.send(msg);
         } catch (Exception e) {
             chat.append("Erro ao enviar mensagem.\n");
         }
 
-
         DesistirTela(msg);
+
+        try {
+            registry.unbind("Communication" + numJogador);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        } catch (NotBoundException e) {
+            e.printStackTrace();
+        }
 
         System.exit(0);
     }
@@ -280,37 +306,6 @@ public class Controller {
         alert.setHeaderText(null);
         alert.setContentText("O jogador " + data[1] + " desistiu!");
         alert.showAndWait();
-    }
-
-    public void Acao(String acao){
-
-        String[] data = (acao).split("-");
-
-        String x = data[0];
-
-        switch (x){
-            case "J":
-                ReceberJogada(acao);
-                break;
-            case "M":
-                ReceberMSG(acao);
-                break;
-            case "R":
-                ReiniciarPartida();
-                break;
-            case "D":
-                DesistirTela(acao);
-                break;
-            case "L":
-                TravarTela();
-                break;
-            case "N":
-                NovaTela();
-                break;
-            case "B":
-                ComecarJogo();
-                break;
-        }
     }
 
 }
